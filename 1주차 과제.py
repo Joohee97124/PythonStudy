@@ -127,14 +127,105 @@ for i in A :
 B = [1, 3, 5, 40, 90, 100, 2020]
 
 for i in B :
+    if i%2==1 :
+        i = i*2
+
+    print(i)
+
+
+#제어문 6.
+
+for i in range(1,6) :
+    print("*" * i)
+    print(end='')
+
+
+
+#함수와 입출력 1.
     
-        
+a = int(input ("점수를 입력하세요.:"))
+
+if a > 80 :
+    print("A")
+elif 80 > a > 50 :
+    print("B")
+elif 50 > a > 30 :
+    print("C")
+else :
+    print("F")
 
 
 
+#함수와 입출력 2.
+
+b = int (input ("숫자를 입력하세요.:"))
+
+if b%2 == 0 :
+    print("TRUE")
+else :
+    print("FALSE")
+    
+
+
+#함수와 입출력 3.
+
+c = input ("주민등록번호를 입력하세요.:")
+
+year = c[0:2]
+
+if int(c[6]) == 1 :
+    print(year,"남자")
+else :
+    print(year,"여자")
 
 
 
+#함수와 입출력 4.
+
+d = int (input("숫자1:"))
+e = input("연산자")
+f = int (input("숫자2:"))
+
+def add(x,y) :
+    return x+y
+
+def sub(x,y) : 
+    return x-y
+
+def mul(x,y) :
+    return x*y
+
+def div(x,y) :
+    return x/y
+
+def ever(x,y) :
+    return x%y
+
+if e == "+" :
+    print(add(d,f))
+elif e == "-" :
+    print(sub(d,f))
+elif e == "*" :
+    print(mul(d,f))
+elif e == "/" :
+    print(div(d,f))
+elif e == "%" :
+    print(ever(d,f))
+
+
+#함수와 입출력 5.
+
+f = int (input ("거스름돈 입력:"))
+
+f5000 = f/5000
+f1000 = f/1000
+f500 = f/500
+f100 = f/100
+f50 = f/50
+f10 = f/10
+
+print( "5000원 : " , f5000,"개" \n
+       "1000원 : " , f1000, "개"\n )
 
 
 
